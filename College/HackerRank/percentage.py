@@ -7,6 +7,6 @@ if __name__ == '__main__':
         student_marks[name] = scores
     query_name = input()
     k = student_marks[query_name]
-    print("{0:.2f}".format(sum(k)/(len(k)))) //used to correct to 2 dp.
+    print("{0:.2f}".format(sum(k)/(len(k)))) #used to correct to 2 dp.
     
 
