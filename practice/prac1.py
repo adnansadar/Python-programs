@@ -1,9 +1,13 @@
-def swap_columns(a,i,j):
-    for k in range(len(a)):
-        a[k][i], a[k][j] = a[k][j], a[k][i]
-m,n =[int(i) for i in input().split()]
-a=[[int(j) for j in input().split()] for i in range(m)]
-i,j = [int(i) for i in input().split()]
-swap_columns(a,i,j)
-for row in a:
-    print(' '.join([str[column] for column in row]))
+l=input()
+maxcount=1
+count=1
+for i in range(len(l)-1):
+        for j in range(i+1,len(l)):
+                if l[i]!=l[j]:
+                        count+=1
+        if count>maxcount:
+                maxcount=count
+        count=1
+print(maxcount)
+        
+                
