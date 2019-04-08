@@ -12,16 +12,13 @@
 # Output the symmetric difference integers in ascending order, one per line.
 
 M=int(input())
-l=[i for i in input().split()]
+l=[int(i) for i in input().split()]
 N=int(input())
-l2=[i for i in input().split()]
-a=set()
-b=set()
-a.update(l)
-b.update(l2)
+l2=[int(i) for i in input().split()]
+a=set(l)
+b=set(l2)
 c=a^b
-l=list(c)
-l.sort()
-for i in l:
-    print(i)
+l=sorted(list(c))
+[print(i) for i in l]
+
 
