@@ -1,9 +1,5 @@
-n=int(input())
-land = {}
-for i in range(n):
-    country, cities = input().split()
-    for city in cities:
-        land[city] = country
-n2=int(input())
-for i in range(n2):
-    print(land[input()])
+l=[1,1.1,"one","c"]
+for i in l:
+	print(i,type(i))
+d=set(l)
+print(d,l)
